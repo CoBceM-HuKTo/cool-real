@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Welcome</title>
+</head>
+<body>
+  <img id="mew1" class="mew1" width="100vw" src="https://media.tenor.com/jRfv15xTuq8AAAAC/pusheen-yay.gif">
+  <span id="text">ПОЕБЕМСЯ ЗДЕСЬ И СЕЙЧАС?</span>
+  <div class="yes" id="yes">ДА</div>
+  <div class="no" id="no">НЕТ</div>
+  
+  <style>
+  .mew2  {
+    display: none;
+  }
+  .mew1 {
+    position:absolute;
+    left: 35vw;
+  }
+  span {
+    position: absolute;
+    left: 18vw;
+    top: 30vw;
+  }
+  div {
+    border: 0.5vw solid black;
+    width: 15vw;
+    text-align: center;
+    padding: 3vw;
+  }
+  .yes {
+    position: absolute;
+    top: 50vw;
+    left: 25vw;
+  }
+  .no {
+    position: absolute;
+    top: 50vw;
+    left: 55vw;
+  }
+  </style>
+<script>
+const s = document.getElementById("no");
+
+s.onclick = function() {
+  z = Math.random() * 100
+  w = Math.random() * 100
+  s.style.top = z + "vw"
+  s.style.left = w + "vw"
+}
+
+const g = document.getElementById("mew1");
+const j = document.getElementById("yes");
+const q = document.getElementById("text");
+j.onclick = function() {
+  g.setAttribute("src", "https://media.tenor.com/3t3lbKnnG3oAAAAC/fat-cat.gif");
+  q.innerText = "УРААА";
+  q.style.left = "40vw"
+}
+</script>
+</body>
+</html>
